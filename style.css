@@ -1,34 +1,249 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    background-color:#FFFFFF;
+    background-image: url("images/top-banner.png");
+    background-repeat: no-repeat;
+    
+
+}
+
+/* Header Design Start */
+.menu-nav {
+    background-color: rgb(141, 114, 5); 
+   display: flex; 
+  
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 19px;
+   
+}
+  
+.menu-item {
+    color: rgb(83, 25, 50);
+    padding: 1px;
+}
+.three-dots{
+  position: relative;
+}  
+.three-dots:after {
+    cursor: pointer;
+    color: rgb(17, 237, 212);
+    content: '☰';
+    font-size: 22px;
+    padding: 6px;
+    border: 1px;
+    
+}
+  
+a {
+    text-decoration: none;
+    color: rgb(161, 10, 10);
+}
+  
+a div {
+    padding: 4px;
+
+}
+.dropdown a{
+  display: block;
+}
+.dropdown a div{
+  padding: 11px 22px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 15px;
+text-transform: uppercase;
+}
+.dropdown a div:hover {
+  background-color: #f0640eae !important;
+  z-index: 10;
+}
+  
+.dropdown {
+    position: absolute;
+    right: 1rem;
+    top:3rem;
+    background-color:#f2f3f4;
+    padding: 15px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.237);
+    border-radius: 4px;
+    width: 250px;
+     
+    color: #09d765;
+  
+    outline: none;
+    opacity: 0;
+    z-index: -1;
+    max-height: 0;
+    transition: opacity 0.1s, z-index 0.1s, max-height: 5s;
+}
+  
+.dropdown-container:focus {
+    outline: none;
+}
+  
+.dropdown-container:focus .dropdown {
+    opacity: 1;
+    z-index: 100;
+    max-height: 100vh;
+    transition: opacity 0.2s, z-index 0.2s, max-height: 0.2s;
+}
+
+
+.heading{
+  font: caption;
+  color: rgb(133, 156, 5);
+  font-size: 18px;
+  font-weight: 700;
+
+}
+  
+
+main{
+    width:85% ;
+    margin: 0 auto ;
+}
+
+/* Header Design End */
+
+  
+/* first-intro-section start here */
+.first-intr-sect {
+display: flex;
+font-size: 18px;
+}
+.first-intro-left h1{
+    font-size: 54px;
+    color: rgb(25, 128, 218);
+}
+
+.first-intro-left {
+    margin-top: 1px;
+   
+}
+.title {
+    font-size: 3.5rem;
+}
+.Developer {
+    background: linear-gradient(to right, hsl(211, 82%, 42%) 0%, #d2f50d 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.sub-title {
+    font-size: 1.2rem;
+}
+.details {
+    color: rgb(226, 29, 183);
+    width: 600px;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, #2b0568, #f807a3);
+    padding:10px 40px;
+    border-radius:5px;
     
 }
 
-/* <!-- First introduction section start --> */
-
-
-.first-intro-section{
-
-display: flex;
-
+  /* first image */
+.first-intro-section-right img {
+    width: 90%;
+    margin-left: 40px;
 }
-.first-intro-section-left{
 
 
+
+  /* first-intro end */
+  
+
+
+/* second intro section start */
+.second-intro-section {
+    display: flex;
+    margin-top: 100px;
+  }
+.second-intro-section-left img {
+    width: 100%;
 }
-.first-intro-section-left h1{
-font-size: 3.5rem ;
 
-
+.second-intro-section-right{
+    margin-left: 90px;
+    width: 50%;
 }
-.first-intro-section-left h4{
-
-
-
+.second-intro-title{
+  color: #d2f50d;
 }
-.first-intro-section-left a{
-    text-decoration: none;
-    background-image: linear-gradient(left);
+  /* second intro section design end */
+  
+  /* experiences section design start */
+.experiences {
+    display: flex;
+    margin-bottom: 100px;
+    color: ;
+}
+
+.left-side-experience {
+    width: 45%;
+    
+    padding: 20px;
+    box-shadow: rgba(17, 16, 16, 0.35) 0px 5px 15px;
     border-radius: 10px;
+    border-left: 7px solid red;
+}
+.right-side-experience {
+    width: 45%;
+    margin-left: 120px;
+    padding: 20px;
+    box-shadow: rgba(16, 15, 15, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    border-left: 7px solid #0606b3e1;
+  }
+  .exp-section-title {
+    font-size: 3rem;
+    margin-left: 0px;
+    color: #1aa5fc;
+
+  }
+  .exp-title {
+    font-size: 2rem;
+    color: #f50dde;
+    
+  }
+  .exp-subtitle {
+    color: #09d765;
+  }
+  .exp-details {
+    text-align: justify;
+    color: rgba(8, 72, 72, 0.707);
+  }
+  /* experiences section  end */
+
+
+
+  /* conversation with me */
+  .conversation{
+    text-align: center;
+    color: #781049;
 }
 
 
+.conversation a{
+   text-decoration: none;
+   background-color: aqua;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 40px;
+}
+.conversation a:hover{
+    background-color: #f1a10a;
+}
+  
+  /* footer  */
+  footer {
+    text-align: center;
+  }
+  .footer-link{
+      text-decoration: none;
+  }
+  /* footer end */
